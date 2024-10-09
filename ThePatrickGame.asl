@@ -17,7 +17,7 @@ init
 {
     vars.Helper.TryLoad = (Func<dynamic, bool>)(mono =>
     {
-		mono.Images.Clear();
+	mono.Images.Clear();
         //ApplicationState enum = Boot, OnLogo, OnMainMenu, inGame
         vars.Helper["GameLevelState"] = mono.Make<int>("ApplicationManager", "instance", "applicationState"); 
         vars.Helper["CameraPosition"] = mono.Make<Vector3f>("CameraManager", "cameraPosition3D");
